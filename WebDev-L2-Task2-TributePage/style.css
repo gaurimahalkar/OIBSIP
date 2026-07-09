@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Arial, sans-serif;
+}
+
+body{
+    background:#f8f6f2;
+    color:#333;
+    line-height:1.7;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#1b1b2f,#6b1e2b);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-family:Georgia,serif;
+    font-size:55px;
+    letter-spacing:2px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:22px;
+    color:#e8c97a;
+}
+
+/* Hero Section */
+
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:50px;
+    padding:70px 8%;
+    background:linear-gradient(135deg,#ffffff,#f1e5d0);
+}
+
+.image{
+    background:white;
+    padding:15px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+.image img{
+    width:330px;
+    height:420px;
+    object-fit:cover;
+    border-radius:15px;
+    border:4px solid #c9a227;
+}
+
+.hero-text{
+    max-width:600px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.hero-text h2{
+    color:#6b1e2b;
+    font-family:Georgia,serif;
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    text-align:justify;
+}
+
+/* Sections */
+
+section{
+    width:85%;
+    margin:45px auto;
+    background:white;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+section h2{
+    color:#6b1e2b;
+    font-family:Georgia,serif;
+    font-size:32px;
+    border-left:5px solid #c9a227;
+    padding-left:15px;
+    margin-bottom:20px;
+}
+
+section p{
+    text-align:justify;
+}
+
+
+/* Lists */
+
+ul{
+    margin-left:25px;
+}
+
+
+li{
+    margin:12px 0;
+}
+
+/* Awards */
+
+#awards li{
+    background:#faf5e8;
+    padding:12px;
+    border-radius:10px;
+    border-left:4px solid #c9a227;
+}
+
+/* Songs */
+
+#songs li{
+    display:inline-block;
+    background:#6b1e2b;
+    color:white;
+    padding:10px 18px;
+    margin:8px;
+    border-radius:25px;
+}
+
+/* Timeline */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+th{
+    background:#6b1e2b;
+    color:white;
+}
+
+td,th{
+    border:1px solid #ddd;
+    padding:15px;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#faf5e8;
+}
+
+/* Quote */
+
+blockquote{
+    margin-top:25px;
+    padding:30px;
+    background:#fff4c4;
+    border-left:7px solid #c9a227;
+    border-radius:15px;
+    font-size:20px;
+    font-style:italic;
+    text-align:center;
+}
+
+/* Footer */
+
+footer{
+    background:#1b1b2f;
+    color:#e8c97a;
+    text-align:center;
+    padding:35px;
+    margin-top:40px;
+}
+
+footer strong{
+    font-size:18px;
+}
+
+/* Responsive Design */
+
+@media(max-width:768px){
+
+    header{
+        padding:40px 15px;
+    }
+
+    header h1{
+        font-size:35px;
+    }
+
+    header p{
+        font-size:18px;
+    }
+
+    .hero{
+        padding:30px 15px;
+        gap:30px;
+    }
+
+    .image img{
+        width:250px;
+        height:300px;
+    }
+
+    .hero-text{
+        padding:20px;
+    }
+
+    .hero-text h2{
+        font-size:26px;
+    }
+
+    section{
+        width:95%;
+        padding:20px;
+    }
+
+    section h2{
+        font-size:25px;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+}

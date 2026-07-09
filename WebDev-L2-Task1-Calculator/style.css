@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#1f1c2c,#928dab);
+}
+
+.calculator{
+    width:340px;
+    padding:25px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(18px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+
+#display{
+    width:100%;
+    height:75px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    padding:15px;
+    font-size:30px;
+    text-align:right;
+    margin-bottom:20px;
+    background:rgba(255,255,255,0.2);
+    color:#fff;
+}
+
+#display::placeholder{
+    color:#ddd;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+}
+
+button{
+    height:65px;
+    border:none;
+    border-radius:15px;
+    font-size:22px;
+    font-weight:600;
+    cursor:pointer;
+    color:#fff;
+    background:rgba(255,255,255,0.15);
+    transition:.3s;
+    box-shadow:0 5px 12px rgba(0,0,0,.2);
+}
+
+button:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,0.28);
+}
+
+button:active{
+    transform:scale(.96);
+}
+
+.operator{
+    background:#ff9800;
+}
+
+.operator:hover{
+    background:#ffb300;
+}
+
+.equal{
+    grid-column:span 2;
+    background:#00c853;
+}
+
+.equal:hover{
+    background:#00e676;
+}
+
+@media(max-width:420px){
+
+.calculator{
+    width:95%;
+}
+
+button{
+    height:60px;
+    font-size:20px;
+}
+
+#display{
+    height:70px;
+    font-size:28px;
+}
+
+}
