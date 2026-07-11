@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+
+    <div class="left-panel">
+
+        <h1>TaskFlow</h1>
+
+        <p class="subtitle">
+            Organize your daily work and stay productive.
+        </p>
+
+        <div class="input-box">
+
+            <label>Task Title</label>
+
+            <input
+                type="text"
+                id="taskTitle"
+                placeholder="Enter task title">
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Description</label>
+
+            <textarea
+                id="taskDescription"
+                placeholder="Enter task description"></textarea>
+
+        </div>
+
+        <div class="input-box">
+
+            <label>Date & Time</label>
+
+            <input
+                type="datetime-local"
+                id="taskDateTime">
+
+        </div>
+
+        <button id="addTaskBtn">
+            Add Task
+        </button>
+
+    </div>
+
+    <!-- Right Panel -->
+
+    <div class="right-panel">
+
+        <div class="top-cards">
+
+            <div class="card">
+
+                <h2 id="pendingCount">0</h2>
+
+                <p>Pending</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="completedCount">0</h2>
+
+                <p>Completed</p>
+
+            </div>
+
+        </div>
+
+        <div class="tabs">
+
+            <button
+                id="pendingTab"
+                class="tab active">
+
+                Pending Tasks
+
+            </button>
+
+            <button
+                id="completedTab"
+                class="tab">
+
+                Completed Tasks
+
+            </button>
+
+        </div>
+
+        <!-- Pending -->
+
+        <div
+            id="pendingSection"
+            class="task-section">
+
+            <p
+                id="pendingMessage"
+                class="empty-message">
+
+                🎯 No pending tasks. Add your first task.
+
+            </p>
+
+            <div id="pendingList"></div>
+
+        </div>
+
+        <!-- Completed -->
+
+        <div
+            id="completedSection"
+            class="task-section hidden">
+
+            <p
+                id="completedMessage"
+                class="empty-message">
+
+                🎉 No completed tasks yet.
+
+            </p>
+
+            <div id="completedList"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
