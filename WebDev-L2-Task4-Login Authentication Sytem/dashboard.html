@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <div class="top-bar">
+
+        <div class="logo">
+            <div class="logo-icon">☰</div>
+            <h2>Dashboard</h2>
+        </div>
+
+    </div>
+
+    <div class="main-card">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+             class="profile-img"
+             alt="Profile">
+
+        <h1>Welcome Back</h1>
+
+        <h2 id="welcomeUser"></h2>
+
+        <p class="welcome-text">
+            You have successfully logged in.
+        </p>
+
+        <div class="card-grid">
+
+            <!-- Card 1 -->
+
+            <div class="card">
+
+                <div class="icon blue">👤</div>
+
+                <h3>User Profile</h3>
+
+                <p id="profileName"></p>
+
+                <small>Your registered username.</small>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="card">
+
+                <div class="icon green">📧</div>
+
+                <h3>Email</h3>
+
+                <p id="profileEmail"></p>
+
+                <small>Your registered email address.</small>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="card">
+
+                <div class="icon purple">🔒</div>
+
+                <h3>Password Security</h3>
+
+                <p>SHA-256 Protected</p>
+
+                <small>Password is securely encrypted.</small>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="card">
+
+                <div class="icon orange">✅</div>
+
+                <h3>Login Status</h3>
+
+                <p>Authentication Successful</p>
+
+                <small>Your session is active.</small>
+
+            </div>
+
+        </div>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

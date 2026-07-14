@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- SHA-256 Library -->
+    <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.11.0/src/sha256.min.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Section -->
+
+    <div class="left-panel">
+
+        <h1>Welcome Back!</h1>
+
+        <p>
+            Login to access your account securely.
+        </p>
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png"
+             alt="Security">
+
+    </div>
+
+    <!-- Right Section -->
+
+    <div class="right-panel">
+
+        <h2>Login</h2>
+
+        <form id="loginForm">
+
+            <div class="input-box">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email">
+
+            </div>
+
+            <div class="input-box">
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password">
+
+            </div>
+
+            <button type="submit">
+                Login
+            </button>
+
+            <p id="loginMsg"></p>
+
+        </form>
+
+        <p class="bottom-text">
+
+            Don't have an account?
+
+            <a href="register.html">
+                Register
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
+
+</body>
+
+</html>
